@@ -9,8 +9,8 @@ A simple RESTful API for managing notes, built with Java 17 and Spring Boot.
 - `POST /notes`: Create a new note.
 - `GET /notes`: Retrieve all notes.
 - `GET /notes/{id}`: Retrieve a specific note by ID.
-- `PUT /notes/{id}`: Update a specific note.
-- `DELETE /notes/{id}`: Delete a specific note.
+- `PUT /notes/{id}`: Update a specific note by ID.
+- `DELETE /notes/{id}`: Delete a specific note by ID.
 
 ## Setup
 
@@ -34,7 +34,7 @@ A simple RESTful API for managing notes, built with Java 17 and Spring Boot.
 
 ## Usage
 
-You can use tools like Postman or cURL to interact with the API.
+You can use tools like Postman or cURL to interact with the API. Swagger can also be used for interactive API documentation and testing. Detailed steps to use Swagger are provided below.
 
 ### Sample Payloads
 
@@ -124,3 +124,20 @@ You can use tools like Postman or cURL to interact with the API.
 - The ID of a note is automatically generated and managed by the application.
 - The application uses an in-memory data store, so all notes will be lost when the application is restarted.
 
+## OpenAPI (Swagger)
+This application includes OpenAPI (Swagger) for API documentation and testing.
+
+1. **Access the Swagger UI**
+
+   Once the application is running, open your web browser and go to: http://localhost:8080/swagger-ui/
+
+   
+2. **Explore the API Endpoints**
+
+The Swagger UI provides a web interface to explore and test the API endpoints.
+You can see the available endpoints, their methods, and the required/request bodies.
+Requests can also be made directly from the Swagger UI.
+
+Here is a screenshot of the Swagger UI for notes API:
+
+![Swagger UI](src/main/resources/swagger/notesapi.png)

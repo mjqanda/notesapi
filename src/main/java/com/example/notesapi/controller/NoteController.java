@@ -31,7 +31,7 @@ public class NoteController {
     public List<Note> getAllNotes() {
         return noteService.findAll();
     }
-
+    
     @GetMapping("/{id}")
     public ResponseEntity<Note> getNoteById(@PathVariable Long id) {
         Optional<Note> note = noteService.findById(id);

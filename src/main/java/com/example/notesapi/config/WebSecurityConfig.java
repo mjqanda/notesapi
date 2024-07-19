@@ -24,6 +24,7 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests(authConfig -> authConfig
                         .requestMatchers("/notes").permitAll()
                         .requestMatchers("/notes/**").permitAll()
+                        .requestMatchers("/**").permitAll()
                         .anyRequest().authenticated())
                 .build();
     }
