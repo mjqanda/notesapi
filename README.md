@@ -141,3 +141,12 @@ Requests can also be made directly from the Swagger UI.
 Here is a screenshot of the Swagger UI for notes API:
 
 ![Swagger UI](src/main/resources/swagger/notesapi.png)
+
+Click Try It Out.
+![Swagger UI](src/main/resources/swagger/try.png)
+
+Click execute.
+![Swagger UI](src/main/resources/swagger/execute.png)
+
+Execute get note api to validate created note.
+![Swagger UI](src/main/resources/swagger/getnote.png)
